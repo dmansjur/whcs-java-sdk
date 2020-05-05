@@ -112,11 +112,11 @@ public class Concept extends DynamicModel {
    * @return the negated
    */
   public Boolean isNegated() {
-	  Boolean negated = GsonSerializationHelper.serializeDynamicModelProperty(this.get("negated"), negatedType);
-	  if (negated == null) {
-		  negated = false;
-	  }
-	  return negated;
+    Boolean negated = GsonSerializationHelper.serializeDynamicModelProperty(this.get("negated"), negatedType);
+    if (negated == null) {
+      negated = false;
+    }
+    return negated;
   }
 
   /**
@@ -125,11 +125,11 @@ public class Concept extends DynamicModel {
    * @return the hypothetical
    */
   public Boolean isHypothetical() {
-	  Boolean hypothetical = GsonSerializationHelper.serializeDynamicModelProperty(this.get("hypothetical"), hypotheticalType);
-	  if (hypothetical == null) {
-		  hypothetical = false;
-	  }
-	  return hypothetical;
+    Boolean hypothetical = GsonSerializationHelper.serializeDynamicModelProperty(this.get("hypothetical"), hypotheticalType);
+    if (hypothetical == null) {
+      hypothetical = false;
+    }
+    return hypothetical;
   }
 
   /**
@@ -266,7 +266,7 @@ public class Concept extends DynamicModel {
    * @return the getLoincId
    */
   public String getLoincId() {
-	  return GsonSerializationHelper.serializeDynamicModelProperty(this.get("loincId"), loincIdType);
+    return GsonSerializationHelper.serializeDynamicModelProperty(this.get("loincId"), loincIdType);
   }
 
   /**
@@ -408,83 +408,82 @@ public class Concept extends DynamicModel {
   /**
    * Sets the icd 9 code.
    *
-   * @param id the new icd 9 Code
+   * @param icd9Code the new icd 9 Code
    */
   public void setIcd9Code(final String icd9Code) {
-	this.put("icd9Code", icd9Code);
+  this.put("icd9Code", icd9Code);
   }
 
   /**
    * Sets the icd 10 code.
    *
-   * @param id the new icd 10 code
+   * @param icd10Code the new icd 10 code
    */
   public void setIcd10Code(final String icd10Code) {
-	  this.put("icd10Code", icd10Code);
+    this.put("icd10Code", icd10Code);
   }
 
   /**
    * Sets the snomed concept id.
    *
-   * @param id the new snomed concept id
+   * @param snomedConceptId the new snomed concept id
    */
   public void setSnomedConceptId(final String snomedConceptId) {
-	  this.put("snomedConceptId", snomedConceptId);
+    this.put("snomedConceptId", snomedConceptId);
   }
 
   /**
    * Sets the nci code.
    *
-   * @param id the new nci code
+   * @param nciCode the new nci code
    */
   public void setNciCode(final String nciCode) {
-	  this.put("nciCode", nciCode);
+    this.put("nciCode", nciCode);
   }
 
   /**
    * Sets the cpt code.
    *
-   * @param id the new cpt code
+   * @param cptCode the new cpt code
    */
   public void setCptCode(final String cptCode) {
-	  this.put("cptCode", cptCode);
+    this.put("cptCode", cptCode);
   }
 
   /**
    * Sets the mesh id.
    *
-   * @param id the new mesh id
+   * @param meshId the new mesh id
    */
   public void setMeshId(final String meshId) {
-	  this.put("meshId", meshId);
+    this.put("meshId", meshId);
   }
 
   /**
    * Sets the rx norm id.
    *
-   * @param id the new rx norm id
+   * @param rxNormId the new rx norm id
    */
   public void setRxNormId(final String rxNormId) {
-	  this.put("rxNormId", rxNormId);
+    this.put("rxNormId", rxNormId);
   }
 
   /**
    * Sets the loinc id.
    *
-   * @param id the new loinc id
+   * @param loincId the new loinc id
    */
   public void setLoincId(final String loincId) {
-	  this.put("loincId", loincId);
+    this.put("loincId", loincId);
   }
 
   /**
    * Sets the vocabs.
    *
-   * @param id the new vocabs id
+   * @param vocabs the new vocabs id
    */
   public void setVocabs(final String vocabs) {
-	  this.put("vocabs", vocabs);
+    this.put("vocabs", vocabs);
   }
 
 }
-
